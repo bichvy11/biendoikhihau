@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Biến đổi khí hậu</title>
+    <style>
+        body 
+        {
+            margin: 0;
+            font-family: Verdana;
+            background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .container 
+        {
+            display: flex;
+        }
+        .menu 
+        {
+            width: 180px;
+            background-color: rgba(2, 62, 138, 0.95);
+            color: white;
+            padding: 10px;
+            height: 100vh;
+            position: fixed;
+            box-shadow: 2px 0 8px rgba(0,0,0,0.3);
+        }
+        .menu h2 
+        {
+            text-align: center;
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #e0f2fe;
+        }
+        .menu a 
+        {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 8px 0;
+            padding: 6px;
+            background-color: rgba(3, 105, 161, 0.9);
+            border-radius: 6px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .menu a:hover 
+        {
+            background-color: #38bdf8;
+            color: #003049;
+            transform: translateX(5px);
+        }
+        .content 
+        {
+            margin-left: 200px;
+            padding: 20px;
+            width: 100%;
+        }
+        h1 
+        {
+            text-align: center;
+            color: #023e8a;
+            background-color: rgba(255, 255, 255, 0.88);
+            padding: 12px;
+            border-radius: 12px;
+        }
+        .box 
+        {
+            background-color: rgba(255, 255, 255, 0.92);
+            border: 2px solid #0096c7;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .box h2 
+        {
+            background-color: #e0f2fe;
+            padding: 8px;
+            border-radius: 6px;
+            color: #014f86;
+        }
+        img, video, iframe 
+        {
+            display: block;
+            margin: 12px auto;
+        }
+        table 
+        {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td 
+        {
+            border: 1px solid #023e8a;
+            padding: 8px;
+            text-align: center;
+        }
+        th { background-color: #90dbf4; }
+        form 
+        {
+            background-color: #f0f9ff;
+            padding: 15px;
+            border-radius: 10px;
+            width: 60%;
+            margin: auto;
+        }
+        input[type="submit"] 
+        {
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        footer 
+        {
+            text-align: center;
+            font-style: italic;
+            margin-top: 30px;
+            background-color: rgba(255,255,255,0.85);
+            padding: 10px;
+            border-radius: 10px;
+            color: #023e8a;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="menu">
+        <h2>📌 MỤC LỤC</h2>
+        <a href="#gioithieu">🌊 Giới thiệu</a>
+        <a href="#bang">📊 Nguyên nhân và hậu quả </a>
+        <a href="#bienphap">☀️ Biện pháp khắc phục</a>
+        <a href="#video">🎬 Video</a>
+        <a href="#amthanh">🔊 Bài hát</a>
+        <a href="#iframe">🌐 Thông tin mở rộng</a>
+        <a href="#form">📝 Ý kiến cá nhân</a>
+    </div>
+    <div class="content">
+        <h1>🌊 BIẾN ĐỔI KHÍ HẬU</h1>
+        <div class="box" id="gioithieu">
+            <h2>1. Giới thiệu </h2>
+            <p>
+                Biến đổi khí hậu là sự thay đổi dài hạn về nhiệt độ và kiểu thời tiết, 
+                chủ yếu do hoạt động của con người (đốt nhiên liệu hóa thạch, phá rừng) tạo ra
+                khí nhà kính, giữ nhiệt và làm Trái Đất nóng lên, gây ra các hiện tượng cực đoan 
+                (bão, hạn hán, lũ lụt, xâm nhập mặn), đe dọa nghiêm trọng sức khỏe, an ninh lương thực, 
+                kinh tế và hệ sinh thái toàn cầu, đặc biệt ở Việt Nam.
+            </p>
+            <table>
+                <tr> <th>Băng tan</th> <th>Hạn hán</th> <th>Nước biển dâng</th>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <img src="bangtan.jpg" width="350">
+                        <p>Băng ở Bắc Cực tan nhanh</p>
+                    </td>
+                    <td align="center">
+                        <img src="hanhan.jpg" width="350">
+                        <p>Hạn hán kéo dài</p>
+                    </td>
+                    <td align="center">
+                        <img src="nuocbiendang.jpg" width="350">
+                        <p>Nước biển dâng, ngập lụt</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="box" id="bang">
+            <h2>2. Nguyên nhân và hậu quả</h2>
+            <table>
+                <tr> <th>Nguyên nhân</th> <th>Hậu quả</th> </tr>
+                <tr>
+                    <td>Đốt nhiên liệu hóa thạch (than, dầu, khí)</td>
+                    <td>Nhiệt độ Trái Đất tăng</td>
+                </tr>
+                <tr>
+                    <td>Phát thải khí CO₂ và CH₄</td>
+                    <td>Hiệu ứng nhà kính gia tăng</td>
+                </tr>
+                <tr>
+                    <td>Phá rừng, cháy rừng</td>
+                    <td>Mất đa dạng sinh học</td>
+                </tr>
+                <tr>
+                    <td>Sản xuất nông nghiệp quy mô lớn</td>
+                    <td>Thời tiết biến đổi thất thường</td>
+                </tr>
+                <tr>
+                    <td>Nhiệt độ toàn cầu tăng</td>
+                    <td>Băng tan, nước biển dâng</td>
+                </tr>
+            </table>
+        </div>
+        <div class="box" id="bienphap">
+            <h2>3. Biện pháp khắc phục biến đổi khí hậu🌍</h2>
+            <p>
+                Biến đổi khí hậu đang ảnh hưởng nghiêm trọng đến môi trường sống của con người.
+                Để bảo vệ Trái Đất, mỗi cá nhân và cộng đồng cần thực hiện những biện pháp cụ thể sau:
+            </p>
+            <ul>
+                <li>💡 Sử dụng tiết kiệm điện, nước và tài nguyên thiên nhiên.</li>
+                <li>☀️ Ưu tiên sử dụng năng lượng tái tạo như năng lượng mặt trời, gió.</li>
+                <li>🌳 Trồng cây, bảo vệ rừng và tăng diện tích cây xanh.</li>
+                <li>🚫🛍️ Hạn chế sử dụng túi ni-lông và đồ nhựa dùng một lần.</li>
+                <li>♻️ Tái chế rác thải và phân loại rác đúng cách.</li>
+                <li>🚲🚌 Sử dụng phương tiện giao thông công cộng hoặc xe đạp.</li>
+                <li>📢 Nâng cao ý thức bảo vệ môi trường trong cộng đồng.</li>
+                <li>🤝 Tham gia các hoạt động bảo vệ môi trường và ứng phó biến đổi khí hậu.</li>
+            </ul>
+            <h3>🌍 Hình ảnh minh họa</h3>
+		         <table>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <img src="baovetraidat.jpg" width="400">
+                        <p>Bảo vệ Trái Đất</p>
+                    </td>
+                    <td align="center">
+                         <img src="taiche.jpg"  width="400">
+                        <p>Tái chế rác thải</p>
+                    </td>
+                    <td align="center">
+                        <img src="nangluong.jpg" width="400">
+                        <p>Năng lượng mặt trời</p>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div class="box" id="video">
+            <h2>4. Video</h2>
+            <iframe 
+                width="500" 
+                height="280"
+                src="https://www.youtube.com/embed/L7KxvjRCjUg"
+                title="Video biến đổi khí hậu"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+        <div class="box" id="amthanh">
+            <h2>5. Bài hát về thiên nhiên, trái đất</h2>
+            <ul>
+                <li><strong>Tên bài hát:</strong> Trái Đất Này Là Của Chúng Mình</li>
+                <li><strong>Nhạc sĩ:</strong> Trương Quang Lục</li>
+                <li><strong>Lời thơ:</strong> Định Hải</li>
+                <li><strong>Năm sáng tác:</strong> Khoảng những năm 1980</li>
+                <li><strong>Thể loại:</strong> Ca khúc thiếu nhi – giáo dục môi trường</li>
+            </ul>
+            <p>
+                <strong>Giới thiệu:</strong><br>
+                “Trái Đất Này Là Của Chúng Mình” là ca khúc dành cho thiếu nhi, thể hiện
+                tình yêu thiên nhiên và khẳng định Trái Đất là ngôi nhà chung của toàn
+                nhân loại. Bài hát mang thông điệp giáo dục ý thức bảo vệ môi trường,
+                thường được sử dụng trong các hoạt động học đường.
+            </p>
+            <img src="traidat.jpg">
+            <div style="text-align: center;">
+                <audio controls>
+                    <source src="baihat.mp3">
+                </audio>
+            </div>
+        </div>
+        <div class="box" id="iframe">
+            <h2>6. Thông tin mở rộng</h2>
+            <iframe
+                src="https://vi.wikipedia.org/wiki/Bi%E1%BA%BFn_%C4%91%E1%BB%95i_kh%C3%AD_h%E1%BA%ADu"
+                width="600"
+                height="300">
+            </iframe>
+            <p> <b> Tài liệu tham khảo </b>
+            <a href="https://www.un.org/en/climatechange" target="_blank">
+                Liên Hợp Quốc – Biến đổi khí hậu
+            </a></p>
+        </div>
+        <div class="box" id="form">
+            <h2>7. Ý kiến cá nhân</h2>
+            <form>
+                Họ và tên:
+                <input type="text"><br><br>
+                Bạn quan tâm đến biến đổi khí hậu?
+                <input type="radio" name="q"> Có
+                <input type="radio" name="q"> Không<br><br>
+                Ý kiến:<br>
+                <textarea rows="4" cols="40"></textarea><br><br>
+                <input type="submit" value="Gửi">
+            </form>
+        </div>
+        <footer>
+            ✨ <strong>“Hành động hôm nay – Bảo vệ ngày mai.”</strong>  ✨   <br>
+              Mỗi việc làm nhỏ của chúng ta đều góp phần xây dựng một tương lai xanh và bền vững. <br>
+        </footer>
+    </div>
+</div>
+</body>
+</html>
